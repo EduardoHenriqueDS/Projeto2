@@ -1,0 +1,600 @@
+*{ /*Propriedades utilizadas para resetar os parâmetros de um site*/
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}*/
+
+html,body{ /*utilizado para deixar a altura dos elementos do site em 100%*/
+	height: 100%;
+}
+
+.clear{ /*Utilizado para limpar a flutuação do float*/
+	clear: both;
+}
+
+header .logo{ /*Criação do logo*/
+	width: 160px;
+	height: 40px;
+	background-color: #ccc;
+	float: left;
+}
+
+header{
+	width: 100%;
+	height: 90vh;
+	padding: 40px 2%;
+	min-height: 800px;
+	background-image: url('../images/capa.png');
+	background-position: center;
+	background-size: cover;
+	/* max-height: 700px; */
+	font-weight: 300;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+header nav{
+	float: right;
+}
+
+nav.mobile-menu{ /*Utilizado para esconder algo*/ 
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/menu.png');
+	background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+	opacity: 1;
+	display: block;
+}
+
+nav.mobile-menu ul{
+	opacity: 0;
+	transition: 1s;
+	display: none;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav.mobile-menu ul li{
+	transition: 1s;
+	padding: 8px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li:hover {
+	background-color: rgb(230,230,230);	
+}
+
+nav.mobile-menu ul li a{
+	text-decoration: none;
+	color:black;
+}
+
+header nav.desktop-menu ul{ /*limpa a estilização de listas, como aquelas marcações laterais*/
+	list-style-type: none;
+}
+
+header nav.desktop-menu li{
+	float: left;
+	padding: 0 20px;
+}
+
+header nav.desktop-menu li a{ 
+	color: white;
+	text-decoration: none;/*Limpa decorações*/
+}
+
+.chamada1{
+	max-width: 600px;
+	float: right;
+	margin: 140px 150px;
+}
+
+.chamada1 h2{
+	font-size: 40px;
+	color: white;
+	font-weight: 300;
+}
+
+.chamada1 p{
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+/*Aqui estou começando a sessao1*/
+section.sessao1{
+	width: 100%;
+	background-color: #472562;
+	padding: 0px 2%;
+	height: 400px;
+}
+
+section.sessao1 .container{
+	max-width: 1000px;
+	height: calc(100% + 30px);
+}
+
+.texto-sessao1{
+	width: 50%;
+	float: left;
+	color: white;
+	margin-top: 60px;
+	padding-left: 80px;
+	position: relative;/*Permite que você altere a posição de qualquer elemento*/
+	float: left;/*Liberado após a incersão do position:relative, permite a definição de posição sendo left, right, top, bottom*/
+}
+
+.texto-sessao1 h2{
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.texto-sessao1 p{
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+.texto-sessao1 ul{
+	font-size: 15px;
+	list-style-position: outside;/*Faz as marcações de bolinha na lista ficarem alinhadas com o texto */
+	padding-left: 15px;
+}
+
+.texto-sessao1 ul li{
+	float: left; 
+	width: 100%;
+	margin-top: 8px;
+}
+
+.btn1-texto{
+	background-color: #ff703d;
+	width: 165px;
+	height: 44px;
+	color: white;
+	cursor: pointer;
+	font-size: 13px;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 30px;
+}
+
+.device-sessao1{
+	float: left;
+	width: 50%;
+	height: 100%;
+	background-image: url('../images/device.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	top: -30px; /*Pixels negativos utilizado para causar o efeito de sebrepor o header com a imagem do celular*/ 
+}
+/***/
+
+/*Aqui estou começando a sessao2*/
+.sessao2{
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: center;
+	background-color: white;
+}
+
+.sessao2 .container{
+	max-width: 1000px;
+}
+
+.sessao2 h2{
+	color: #472663;
+	font-weight: 300;
+}
+
+.sessao2 p{
+	margin-top: 30px;
+	max-width: 700px;
+	display: inline-block;
+}
+
+.sessao2 img{
+	position: relative;
+	top: 70px;
+	width: 100%;
+	margin-top: 10px;
+}
+/***/
+
+/*Aqui estou começando a sessao3*/
+.sessao3{
+	width: 100%;
+}
+
+.part1{
+	float: left;
+	width: 50%;
+	color: white;
+	padding: 140px 0 90px 0;
+	background-color: #835fa7;
+}
+
+.part1 h2{
+	font-weight: 300;
+	font-style: italic;
+	font-size: 23px;
+}
+
+.part1 p{
+	font-size: 15px;
+	line-height: 35px;
+	margin-top: 10px;
+}
+
+.wraper-part1{
+	max-width: 600px;
+	float: right;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.part2{
+	float: left;
+	width: 50%;
+	padding: 130px 0 90px 0;
+	background-color: white;
+}
+
+.sobre-autor{
+	float: left;
+	width: 100%;
+	padding-left: 20px;
+}
+
+.titulo-autor{
+	float: left;
+	width: 100%;
+}
+
+.titulo-autor h2{
+	color: #232323;
+	font-weight: 400;
+	padding-right: 20px;
+	font-size: 25px;
+}
+
+.titulo-autor p{
+	font-style: italic;
+	font-size: 15px;
+	font-weight: 300;
+	color: #232323;
+}
+
+.titulo-autor .img-autor{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	position: relative;
+	top: -4px;
+	background-color: grey;
+}
+
+.wraper-titulo-autor{
+	float: left;
+}
+
+.texto-autor{
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.texto-autor p{
+	color: #232323;
+	font-size: 15px;
+}
+
+.slider-bullets{
+	width: 100%;
+	float: left;
+	margin-top: 12px;
+	padding-left: 20px;
+}
+
+.slider-bullets span{
+	width: 16px;
+	height: 16px;
+	float: left;
+	border-radius: 8px;
+	margin-right: 8px;
+	background-color: rgb(200, 200, 200);
+	cursor: pointer;
+}
+/***/
+
+/*Aqui estou começando a sessao4*/
+
+section.sessao4{
+	background-color: #472563;
+	padding: 100px 0;
+}
+
+.form{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+form h2{
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.form p{
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 400px;
+	padding-right: 10px;
+}
+
+.form form{
+	margin-top: 15px;
+}
+
+.form form input[type=text]{
+	width: 90%;
+	max-width: 480px;
+	margin-top: 5px;
+	height: 58px;
+	padding-left: 8px;
+	line-height: 58px;
+	border: 1px solid rgb(200, 200, 200);
+}
+
+.form form textarea{
+	width: 90%;
+	margin-top: 6px;
+	max-width: 480px;
+	padding: 15px;
+	border: 1px solid rgb(200, 200, 200);
+	height: 160px;
+}
+
+.form form input[type=submit]{
+	background-color: #ff703d;
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+	margin-top: 15px;
+	border-radius: 30px;
+	border: 0;
+}
+
+.map-wraper{
+	float: left;
+	width: 50%;
+	color:white;
+	padding: 0 10px;
+}
+
+.map-wraper h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.map-wraper3{
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+	margin-top: 10px;
+}
+
+.map-wraper2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 100%;
+}
+
+.map{
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border: 5px solid rgb(200,200,200);
+}
+
+.map > iframe{
+	width: 100%;
+	height: 100%;
+}
+/***/
+
+/*Rodapé*/
+
+footer{
+	padding: 40px 2%;
+	background: #192123;
+	color: white;
+}
+
+footer p:nth-of-type(1){
+	float: left;
+	font-size: 14px;
+}
+
+footer p:nth-of-type(2){
+	float: right;
+	font-size: 14px;
+}
+
+/***/
+
+@media screen and (max-width: 830px){
+	.chamada1{
+		max-width: none;
+		width: 100%;
+		text-align: center;
+		float: none;
+		margin:170px 0;
+	}
+	
+	.chamada1 h2{
+		font-weight: 300;
+		font-size: 30px;
+		padding:0 0px;
+		color: white;
+	}
+	
+	.chamada1 p{
+		font-size: 15px;
+		color: white;
+		margin-top:10px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	header{
+		width: 100%;
+		height: auto;
+		min-height: 90vh;
+		padding:40px 2%;
+	}
+	
+	nav.desktop-menu{
+		display:none;
+	}
+	
+	nav.mobile-menu{
+		display: block;
+	}
+	
+	section.sessao1{
+		padding:40px 2%;
+		height: auto;
+		text-align: center;
+	}
+	
+	.texto-sessao1{
+		width: 100%;
+		margin-top:0;
+		padding-left: 0; /*Ultilizado para retirar o espaçamento da esquerda*/
+		position: static; 
+		float: none;
+		display: inline-block;
+	}
+	
+	.texto-sessao1 ul{
+		/* Elementos ultilizados para centralizar o botão */
+		display: inline-block;
+		margin-top:20px;
+	}
+	
+	.texto-sessao1 ul li{
+		/* Elementos ultilizados para centralizar o botão */
+		float: none;
+		text-align: left;
+	}
+	
+	.btn1-texto{
+		display: inline-block;
+	}
+	
+	.device-sessao1{
+		display: none;
+	}
+
+	.sessao2{
+		margin: 20px;
+		padding-top: 40px 2%;
+	}
+
+	.form{
+		width: 100%;
+		float: none;
+	}
+
+	.form p{
+		display: inline-block;
+		float: none;
+	}
+
+	.map-wraper{
+		float: none;
+		width: 100%;
+		padding: 0 4%;
+		margin-top: 40px;
+	}
+
+	section.sessao4 .container{
+		text-align: center;
+	}
+
+	.map-wraper3{
+		margin-top: 10px;
+		width: 80%;
+		padding-top: 80%;
+		display: inline-block;
+		max-width: none;
+		position: relative;
+	}
+
+	.map-wraper2{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		padding-top: 100%;
+	}
+}
+
+@media screen and (max-width: 580px){
+	.part1{
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	.part2{
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	.sessao2 img{
+		top: 40px;
+		margin-top: 5px;
+	}
+
+	footer{
+		text-align: center;
+	}
+	
+	footer p:nth-of-type(1){
+		float: none;
+		font-size: 14px;
+	}
+	
+	footer p:nth-of-type(2){
+		float: none;
+		font-size: 14px;
+		margin-top: 8px;
+	}
+}
